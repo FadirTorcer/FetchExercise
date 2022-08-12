@@ -16,7 +16,9 @@
                             <img src=${json[index].image} height=250></img>
                             </div>
                             `;
-                        if ((index % 5) > 0) {
+                        if (index >= 5) {
+                            index = 0;
+                        } else {
                             index += 1;
                         }
                     });
